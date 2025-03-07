@@ -1,0 +1,19 @@
+[package]
+name = "copy_trading"
+version = "0.1.0"
+edition = "2021"
+description = "Solana Copy Trading Program"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.28.0"
+anchor-spl = "0.28.0"
+solana-program = "1.17.0"

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-100 bg-black;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-blur {
+    backdrop-filter: blur(20px);
+  }
+}
